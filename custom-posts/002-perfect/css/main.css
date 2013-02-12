@@ -1,0 +1,107 @@
+@-webkit-keyframes blinky {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes blinky {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes blinky {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes blinky {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes blinky {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background: url(../img/perfect.JPG) center center no-repeat;
+  background-size: cover;
+  min-width: 600px; }
+
+article {
+  font: 1.4em/1.5em unicod-sans, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: #651423;
+  /*color: black;*/
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  article .text-wrap {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 539px;
+    min-height: 29px;
+    padding: 20px; }
+    article .text-wrap .next-text-btn {
+      position: absolute;
+      top: 22px;
+      left: 24px;
+      height: 7px;
+      width: 7px;
+      border: 7px solid black;
+      background-color: #dd224b;
+      background-color: white;
+      box-shadow: 0px 0px 0px white, 0px 0px 0px #dd224b;
+      cursor: pointer;
+      -webkit-transition: all 100ms ease-in-out 0s;
+      -moz-transition: all 100ms ease-in-out 0s;
+      -ie-transition: all 100ms ease-in-out 0s;
+      -o-transition: all 100ms ease-in-out 0s; }
+      article .text-wrap .next-text-btn:hover {
+        -webkit-animation: blinky 100ms ease-in-out 0 1;
+        animation: blinky 100ms ease-in-out 0 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -moz-animation: blinky 100ms ease-in-out 0 1;
+        animation: blinky 100ms ease-in-out 0 1;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -ie-animation: blinky 100ms ease-in-out 0 1;
+        animation: blinky 100ms ease-in-out 0 1;
+        -ie-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -o-animation: blinky 100ms ease-in-out 0 1;
+        animation: blinky 100ms ease-in-out 0 1;
+        -o-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite; }
+    article .text-wrap p {
+      text-transform: uppercase;
+      margin: 0 0 0 35px; }
+      article .text-wrap p span {
+        display: inline-block;
+        background: black;
+        margin-bottom: 4px;
+        line-height: 1em;
+        padding-top: 2px; }
+      article .text-wrap p.block-2, article .text-wrap p.block-3 {
+        display: none; }

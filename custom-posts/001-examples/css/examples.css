@@ -1,0 +1,249 @@
+/* #Fonts
+================================================== */
+
+ @font-face
+     { font-family : "Lubalin";
+         src: /*url('../fonts/DINNextLTPro-Medium.woff') format('woff'),*/
+              url('../fonts/LubalinGraph-EL.otf'); }
+
+@font-face
+    { font-family : "Lubalin-book";
+        src: /*url('../fonts/DINNextLTPro-Medium.woff') format('woff'),*/
+             url('../fonts/LubalinGraph-BK.otf'); }
+             
+
+/* #Article
+================================================== */
+
+html {
+  height: 100%;
+}
+
+body {
+  background: url('../img/bg.png') repeat left top;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  z-index: 10;
+  
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  -webkit-transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform-origin: top left;
+  -moz-transform: rotate(-90deg);
+  -o-transform-origin: top left;
+  -o-transform: rotate(-90deg);
+  -ms-transform-origin: top left;
+  -ms-transform: rotate(-90deg);
+}
+
+h1 {
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  color: hsl(167, 46%, 47%);
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 59px;
+  font-family: Lubalin, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
+  line-height: 58px;
+  background: url(../img/stripe2.png) repeat-x;
+  width: 2000px;
+}
+
+h1 span {  
+  display: inline-block;
+  background: url('../img/bg.png') repeat left top;
+  padding: 0 8px;
+}
+
+.belt {
+  height: 100%;
+  position: relative;
+  left: 0px;
+  z-index: 1;
+  
+  transition: left .3s ease-in-out;
+  -webkit-transition: left .3s ease-in-out;
+  -moz-transition: left .3s ease-in-out;
+  -o-transition: left .3s ease-in-out;
+  -ms-transition: left .3s ease-in-out;
+}
+
+/*** Site ***/
+
+.site {
+  width: 1025px;
+  float: left;
+  height: 100%;
+  opacity: .2;
+  
+  transition: opacity .3s ease-in-out .2s;
+  -webkit-transition: opacity .3s ease-in-out .2s;
+  -moz-transition: opacity .3s ease-in-out .2s;
+  -o-transition: opacity .3s ease-in-out .2s;
+  -ms-transition: opacity .3s ease-in-out .2s;
+}
+
+.site.active {
+  opacity: 1;
+}
+
+.description-wrap {
+  height: 100%;
+  float: left;
+  background: url(../img/stripe-small.gif);
+  width: 245px;
+  margin: 0 48px 0 230px;
+  padding-top: 50px;
+}
+
+.description {
+  background: url('../img/bg.png') repeat left top;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+h2 {
+  font-family: Lubalin-book;
+  font-weight: normal;
+  color: hsl(167, 46%, 27%);
+  padding-top: 10px;
+  margin: 0;
+}
+
+.description p {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
+  
+  color: hsl(167, 46%, 27%);
+}
+
+a {
+  color: hsl(167, 46%, 27%);
+}
+
+.visit {
+  color: hsl(167, 46%, 27%);
+  text-decoration: none;
+}
+
+.visit:hover {
+  text-decoration: underline;
+}
+
+.screen {
+  float: left;
+  width: 500px;
+  height: 100%;
+  overflow: scroll;
+  padding-top: 28px;
+  display: block;
+  border: 0;
+  text-decoration: none;
+}
+
+.screen:hover img {
+  box-shadow: 0px 1px 7px rgba(0,0,0,0.6); 
+}
+
+h3 {
+  font-family: Lubalin-book;
+  font-weight: normal;
+  color: hsl(167, 46%, 48%);
+  margin: 0 10px 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+h3:before {
+  content: '"';
+}
+
+h3:after {
+  content: '"';
+}
+
+.screen img {
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+  margin: 0 10px 100px;
+}
+
+/*** Switch ***/
+
+.inside-switch {
+  padding: 5px 0 3px 0;
+  margin: 0;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  list-style: none;
+  width: 245px;
+  background: url('../img/bg.png') repeat left top;  
+}
+
+.inside-switch li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
+  color: hsl(167, 46%, 27%);
+  float: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.inside-switch li.prev {
+  float: left;
+}
+
+.inside-switch li.next { 
+  float: right;
+}
+
+.inside-switch li:hover {
+  color: hsl(167, 46%, 57%);
+}
+
+
+.site:first-child .inside-switch li.prev,
+.site:last-child .inside-switch li.next {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

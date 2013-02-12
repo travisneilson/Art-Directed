@@ -1,0 +1,229 @@
+/*
+Theme Name: Art Directed Posts Wordpress Theme
+Theme URI: http://travisneilson.com/
+Description: Theme for TravisNeilson.com
+Version: 1
+Author: Travis Neilson
+Author URI: http://travisneilson.com/
+Tags: Art Directed Posts Theme
+
+	Make Art-Directed Posts
+	http://travisneilson.com/my-post
+
+	This theme was designed and built by Travis Neilson,
+	whose blog you will find at http://travisneilson.com/
+
+*/
+
+
+
+/**********************************************
+
+			Every single piano i've ever met in my life
+			never sounded as good as melted Casio keys
+
+**********************************************/
+
+
+/* Kills the WP-Stats happyface */
+
+#wpstats { display: none !important; }
+
+
+/* Temp Home Styles, define all these on your own, sucka */
+
+body{
+  font-family: "helvetic neue", helvetica, arial, sans-serif;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #444;
+  border-radius: 19px;
+  border: 2px solid #fff;
+  background: #222 url('img/logo2.png') no-repeat 4px center;
+  overflow: hidden;
+  transition: width 0.2s ease-in-out;
+  -webkit-transition: width 0.2s ease-in-out;
+  -moz-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  cursor: default;
+  z-index: 100;
+}
+
+.not-home .logo {
+  cursor: pointer;
+}
+
+.not-home .logo:hover {
+  width: 95px;
+}
+
+.logo span {
+  display: inline-block;
+  line-height: 36px;
+  font-weight: bold;
+  margin-left: 37px;
+  color: #aaa;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+body.home {
+  background: center top repeat url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_dots.png');
+  color: #444;
+  width: 800px;
+  margin: 20px auto 40px;
+}
+
+.home h1 {
+  text-transform: uppercase;
+  font-size: 65px;
+  text-indent: -34px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+
+.home ul.loop {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  float: left;
+  width: 300px;
+}
+
+.home li {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.home .loop a, .home
+.instructions a {
+  display: inline-block;
+  background: #444;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 2px 4px;
+  font-size: 24px;
+}
+
+.home .loop a:hover,
+.home .instructions a:hover {
+  background: hsl(55, 100%, 68%);
+  color: #444;
+}
+
+.home .loop a.download,
+.home .instructions a.download {
+  background: #efe56d;
+  color: #444;
+  background: hsl(55, 100%, 68%);
+  border: 2px solid #fff;
+}
+
+.home .loop a.download:hover,
+.home .instructions a.download:hover {
+  background: hsl(55, 100%, 58%);
+  border: 2px solid #444;
+}
+
+a.download:before {
+  content: '';
+  position: relative;
+  width: 21px;
+  height: 21px;
+  background: url('img/dl.png') no-repeat center center;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.home p, .home li {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.home .instructions {
+  float: right;
+  width: 400px;
+  text-align: left;
+  margin-top: -55px;
+}
+
+.home code {
+  color: darkorchid;
+  background: #ddd;
+  padding: 2px 0;
+}
+
+.screen-shot {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: right;
+  margin-left: 15px;
+  border: 2px solid #444;
+  background-color: hsl(55, 100%, 68%);
+  cursor: pointer;
+}
+
+.screen-shot:hover:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(55, 100%, 68%, .8);
+}
+
+.screen-shot:hover:after {
+  content: '+';
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 60px;
+  font-size: 27px;
+}
+
+.new-post-folder {
+  background-image: url('img/new-post-folder.png');
+  background-position: 612px -100px;
+}
+
+.add-post-screen {
+  background-image: url(img/add-post-screen.png);
+  background-position: 952px -450px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(55, 100%, 68%, .8);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+.overlay-post-folder {
+  background-image: url(img/new-post-folder.png);
+}
+
+.overlay-post-screen {
+  background-image: url(img/add-post-screen.png);
+}

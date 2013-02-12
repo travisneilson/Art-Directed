@@ -1,0 +1,92 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {@content; }
+  @-moz-keyframes #{$name} { @content;}
+  @-ms-keyframes #{$name} {@content;}
+  @-o-keyframes #{$name} {@content;}
+  @keyframes #{$name} {@content;} 
+}
+ 
+@include keyframes(blinky) {
+  0% { opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@mixin invoke-ani($name, $dur, $del) {
+  @each $browser in webkit, moz, ie, o {
+    -#{$browser}-animation: $name $dur ease-in-out $del 1;
+      animation: $name $dur ease-in-out $del 1;
+    -#{$browser}-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(../img/perfect.JPG) center center no-repeat;
+  background-size: cover;
+  min-width: 600px;
+}
+
+article {
+  font: 1.4em/1.5em unicod-sans, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color:  #651423;
+  /*color: black;*/
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  .text-wrap {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 539px;
+    min-height: 29px;
+    padding: 20px;
+    
+    .next-text-btn {
+      position: absolute;
+      top: 22px;
+      left: 24px;
+      height: 7px;
+      width: 7px;
+      border: 7px solid black;
+      background-color: hsl(347, 73%, 50%);
+      background-color: white;
+      box-shadow: 0px 0px 0px #fff, 0px 0px 0px hsl(347, 73%, 50%);
+      cursor: pointer;
+      @each $browser in webkit, moz, ie, o {-#{$browser}-transition: all 100ms ease-in-out 0s;}
+      
+      &:hover {
+        @include invoke-ani(blinky, 100ms, 0);
+        animation-iteration-count:infinite;
+        -moz-animation-iteration-count:infinite;
+        -webkit-animation-iteration-count:infinite;
+      }
+    }
+    
+    p {
+      text-transform: uppercase;
+      margin: 0 0 0 35px;
+      
+      span {
+        display: inline-block;
+        background: black;
+        margin-bottom: 4px;
+        line-height: 1em;
+        padding-top: 2px;
+       }
+        
+      &.block-2,
+      &.block-3
+       {display: none;}
+      
+    }
+  }
+}

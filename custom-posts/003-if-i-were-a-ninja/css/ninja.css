@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: url(../img/black_denim.png);
+  color: #ccc;
+  font-family: georgia, serif;
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 22px;
+  font-size: 20px;
+  width: 400px;
+  margin: 50px auto;
+  text-shadow: 0px 0px 20px #000;
+  position: relative;
+}
+
+h1 span {
+  display: block;
+  color: #ab0000;
+  font: 140px/82px 'Kaushan Script';
+  text-transform: none;
+  border-top: 1px solid #999;
+  margin-top: 24px;
+  letter-spacing: 0;
+}
+
+h1 i {
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+h2 {
+  font: 30px 'Kaushan Script';
+  margin: 0 30px;
+}
+
+.positioner {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.stanza {
+  margin: 150px 0 0;
+  position: relative;
+  line-height: 1.5;
+}
+
+.stanza:before {
+  content: '';
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  z-index: -1;
+  border-image: url(../img/slice-border.png) 9 stretch;
+  -webbkit-border-image: url(../img/slice-border.png) 9 stretch;
+  -moz-border-image: url(../img/slice-border.png) 9 stretch;
+  -o-border-image: url(../img/slice-border.png) 9 stretch;
+  border-width: 8px 0px 0px 0px;
+  top: -142px;
+}
+
+.stanza.left:before {
+  left: 0;
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform-origin: 0px 0px;
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -o-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  background-color: #222;
+}
+
+.stanza.right:before {
+  right: 0;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform-origin: 100% 0px;
+  -webkit-transform-origin: 100% 0px;
+  -moz-transform-origin: 100% 0px;
+  -o-transform-origin: 100% 0px;
+  -ms-transform-origin: 100% 0px;
+  background-color: #ab0000;
+}
+
+.stanza:after {
+  content: '';
+  display: block;
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  bottom: -42px;
+  right: 0px;
+  background-image: url(../img/1.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 160px;
+  z-index: -1;
+}
+
+.stanza:nth-child(5n-1):after { background-image: url(../img/1.png); }
+.stanza:nth-child(5n-2):after { background-image: url(../img/2.png); }
+.stanza:nth-child(5n-3):after { background-image: url(../img/3.png); }
+.stanza:nth-child(5n-4):after { background-image: url(../img/4.png); }
+.stanza:nth-child(5n-5):after { background-image: url(../img/5.png); }
+.stanza:nth-child(5n-6):after { background-image: url(../img/6.png); }
+
+
+.stanza.right:after {
+  right: auto;
+  left: 0;
+}
+
+.left p {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.right p {
+  width: 300px;
+  margin-left: 170px;
+}
+
+.right {
+  text-align: right;
+  color: black;
+}
