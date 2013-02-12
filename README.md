@@ -7,11 +7,11 @@ A barebones and flexible Art-Directed Theme Framework for Wordpress
 
 Use this "theme" however you like, I don't give a crap. Let me know if you like it, or have any helpful suggestions.
 
-travisnelison@gmail.com
+travisneilson@gmail.com
 
 ## What is an "Art-Directed" Theme?
 - I'm actually not sure if this is the right term for what this is, but the idea of an Art-Directed blog is that each post is designed and laid-out in a custom way. Each post is visually considered to enhance its message. 
-- For examples of how I use this framework see www.travisnelison.com
+- For examples of how I use this framework see www.travisneilson.com
 
 ## How will this make your life better?
 - More money
