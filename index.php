@@ -32,7 +32,7 @@
 
 <p><a href="mailto:travisneilson@gmail.com" style="font-size: 18px;">travisnelison@gmail.com</a></p>  
   
-  <p><a href="" class="download">Download from github.com</a></p>
+  <p><a href="https://github.com/travisneilson/Art-Directed" class="download">Download from github.com</a></p>
   
   <h2>HOW TO USE THIS:</h2>
   <ol>
